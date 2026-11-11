@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tareas</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <main class="contenedor">
+        <header class="encabezado">
+            <span class="decoracion">:></span>
+            <h1>Lista de tareas</h1>
+            <p>Organiza tus tareas de manera sencilla y eficiente jeje.</p>
+            <span class="linea"></span>
+        </header>
+        <section class="estadisticas">
+
+            <div class="tarjeta-estadistica">
+                <span>Total</span>
+                <h2 id="contador-total">0</h2>
+            </div>
+            <div class="tarjeta-estadistica">
+                <span>Completadas</span>
+                <h2 id="contador-completadas">0</h2>
+            </div>
+            <div class="tarjeta-estadistica">
+                <span>Pendientes</span>
+                <h2 id="contador-pendientes">0</h2>
+            </div>
+        </section>
+
+        <section class="contenedor-tareas">
+            <h2 class="titulo-seccion">Los pendientes </h2>
+
+            <form id="formulario-tareas">
+                <input
+                    type="text"
+                    id="entrada-tarea"
+                    placeholder="Escribe una tarea..."
+                    maxlength="100"
+                >
+                <button type="submit">Agregar</button>
+            </form>
+
+            <p id="mensaje-formulario"></p>
+
+            <ul id="lista-tareas">
+
+                <li class="mensaje-vacio">
+                    No hay tareas todavía...
+                </li>
+            </ul>
+            <div class="seccion-progreso">
+
+                <div class="informacion-progreso">
+                    <span>Progreso</span>
+                    <span id="porcentaje-progreso">0%</span>
+                </div>
+                <div class="barra-fondo">
+                    <div id="relleno-progreso"></div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <p>en plan lol xd</p>
+        </footer>
+
+    </main>
+</body>
+</html>
